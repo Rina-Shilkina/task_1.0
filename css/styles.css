@@ -1,0 +1,21 @@
+.page {
+
+	width: 1400px;
+	height: 2733px;
+}
+
+.header {
+	width: 1400px;
+	height: 116px;
+	background-color: white;
+}
+
+.banner {
+	width: 1400px;
+	height: 603px;
+	background-color: RGB(62, 194, 243); 
+}
+
+.bellow_banner {
+
+}
