@@ -6,6 +6,8 @@ $color-banner: RGB(62, 194, 243);
 $color_bellow_banner: RGB(70, 166, 81);
 $color_latest_events: RGB(155, 36, 45);
 $color_footer: RGB(55, 56, 56);
+$color_button_header: RGB(155, 36, 45);
+
 
 body {
 
@@ -24,6 +26,7 @@ body {
 	width: 1400px;
 	height: 116px;
 	background-color: $color-head;
+
 }
 
 .banner {
@@ -53,4 +56,30 @@ body {
 	height: 383px;
 	background-color: $color_footer;
 	
+}
+
+#logo {
+	padding: 35px 0px 0px 187px;
+	float: left;
+}
+
+.head_button {
+	border-width: 10px;	
+}
+
+.header_navigation {
+
+	float: right;
+}
+
+.header_navigation ul {
+
+	list-style-type: none;
+}
+
+.header_navigation ul li {
+
+	display: inline-block;
+	background-color: $color_button_header;
+	padding: 10px 15px;
 }

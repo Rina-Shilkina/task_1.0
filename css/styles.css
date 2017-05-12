@@ -31,4 +31,22 @@ body {
   height: 383px;
   background-color: RGB(55, 56, 56); }
 
+#logo {
+  padding: 35px 0px 0px 187px;
+  float: left; }
+
+.head_button {
+  border-width: 10px; }
+
+.header_navigation {
+  float: right; }
+
+.header_navigation ul {
+  list-style-type: none; }
+
+.header_navigation ul li {
+  display: inline-block;
+  background-color: RGB(155, 36, 45);
+  padding: 10px 15px; }
+
 /*# sourceMappingURL=styles.css.map */
