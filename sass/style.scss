@@ -1,8 +1,56 @@
 @charset "UTF-8";
 
-$color: orangered;
+$color-test: blue;
+$color-head: white;
+$color-banner: RGB(62, 194, 243);
+$color_bellow_banner: RGB(70, 166, 81);
+$color_latest_events: RGB(155, 36, 45);
+$color_footer: RGB(55, 56, 56);
 
 body {
 
-  background-color: $color;
+  background-color: $color-test;
+  margin: 0;
+}
+
+.page {
+
+	width: 1400px;
+	height: 2733px;
+}
+
+.header {
+
+	width: 1400px;
+	height: 116px;
+	background-color: $color-head;
+}
+
+.banner {
+
+	width: 1400px;
+	height: 603px;
+	background-color: $color-banner;
+}
+
+.bellow_banner {
+
+	width: 1400px;
+	height: 950px;
+	background-color: $color_bellow_banner;
+}
+
+.latest_events {
+
+	width: 1400px;
+	height: 681px;
+	background-color: $color_latest_events;
+}
+
+.footer {
+
+	width: 1400px;
+	height: 383px;
+	background-color: $color_footer;
+	
 }
