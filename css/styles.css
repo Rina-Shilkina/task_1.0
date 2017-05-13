@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic");
 body {
-  background-color: blue;
+  background-color: RGB(6, 221, 70);
   margin: 0; }
 
 .page {
   width: 1400px;
-  height: 2733px; }
+  height: 2733px;
+  margin: 0px auto; }
 
 .header {
   width: 1400px;
@@ -32,21 +34,30 @@ body {
   background-color: RGB(55, 56, 56); }
 
 #logo {
-  padding: 35px 0px 0px 187px;
-  float: left; }
+  padding: 35px 0px 0px 188px;
+  display: inline-block; }
 
-.head_button {
-  border-width: 10px; }
-
+/*.head_button {
+	border-width: 10px;
+}*/
 .header_navigation {
-  float: right; }
+  float: right;
+  padding: 28px 191px 0px 0px; }
 
 .header_navigation ul {
-  list-style-type: none; }
+  list-style-type: none;
+  font-family: Roboto Slab, serif;
+  font-size: 10pt;
+  font-color: RGB(108, 109, 109); }
 
 .header_navigation ul li {
   display: inline-block;
+  padding: 8px 17px;
+  margin-left: 4px;
+  border-radius: 3px; }
+
+.header_navigation ul li:first-child {
   background-color: RGB(155, 36, 45);
-  padding: 10px 15px; }
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */

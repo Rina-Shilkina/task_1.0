@@ -1,28 +1,32 @@
 @charset "UTF-8";
 
-$color-test: blue;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic');
+
+$color-test: RGB(6, 221, 70);
 $color-head: white;
 $color-banner: RGB(62, 194, 243);
 $color_bellow_banner: RGB(70, 166, 81);
 $color_latest_events: RGB(155, 36, 45);
 $color_footer: RGB(55, 56, 56);
 $color_button_header: RGB(155, 36, 45);
+$color_font_button_off_header: RGB(108, 109, 109);
+$color_font_button_on_header: white;
+
+$text_font_Roboto_Slab: Roboto Slab;
 
 
 body {
-
-  background-color: $color-test;
-  margin: 0;
+	background-color: $color-test;
+	margin: 0;
 }
 
 .page {
-
 	width: 1400px;
 	height: 2733px;
+	margin: 0px auto;
 }
 
 .header {
-
 	width: 1400px;
 	height: 116px;
 	background-color: $color-head;
@@ -30,28 +34,24 @@ body {
 }
 
 .banner {
-
 	width: 1400px;
 	height: 603px;
 	background-color: $color-banner;
 }
 
 .bellow_banner {
-
 	width: 1400px;
 	height: 950px;
 	background-color: $color_bellow_banner;
 }
 
 .latest_events {
-
 	width: 1400px;
 	height: 681px;
 	background-color: $color_latest_events;
 }
 
 .footer {
-
 	width: 1400px;
 	height: 383px;
 	background-color: $color_footer;
@@ -59,27 +59,38 @@ body {
 }
 
 #logo {
-	padding: 35px 0px 0px 187px;
-	float: left;
+	padding: 35px 0px 0px 188px;
+	display: inline-block;
+
+	//float: left;
 }
 
-.head_button {
-	border-width: 10px;	
-}
+/*.head_button {
+	border-width: 10px;
+}*/
 
 .header_navigation {
-
 	float: right;
+	padding: 28px 191px 0px 0px;
 }
 
 .header_navigation ul {
-
 	list-style-type: none;
+	font-family: $text_font_Roboto_Slab, serif;
+	font-size: 10pt;
+	font-color: $color_font_button_off_header;
 }
 
 .header_navigation ul li {
-
 	display: inline-block;
+	//background-color: $color_button_header;
+	padding: 8px 17px;
+	margin-left: 4px;
+	border-radius: 3px;
+}
+
+
+.header_navigation ul li:first-child {
 	background-color: $color_button_header;
-	padding: 10px 15px;
+	color: $color_font_button_on_header;
 }
