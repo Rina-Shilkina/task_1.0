@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,400");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 /* -- общие переменные --*/
 /* -- переменные header --*/
 /* -- переменные banner --*/
@@ -63,13 +64,13 @@ body {
   background-color: RGB(155, 36, 45);
   color: RGB(241, 239, 236); }
 
+/* -- стили banner -- */
 .banner .background_filter {
   width: inherit;
   height: inherit;
   background-color: rgba(155, 36, 45, 0.5);
   position: absolute; }
 
-/* -- стили banner -- */
 .banner .background {
   width: inherit;
   height: inherit;
@@ -81,15 +82,41 @@ body {
   height: inherit;
   position: absolute;
   color: white;
-  font-family: Roboto Slab, serif;
-  text-align: center; }
+  font-family: Roboto Slab, serif; }
 
 .banner_words p:first-child {
   text-transform: uppercase;
   font-size: 50px;
   font-weight: bold;
   margin: 211px 5px 0 0;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  text-align: center; }
+
+.banner_words p:last-child {
+  font-weight: 100;
+  font-size: 24px;
+  margin: -1px 5px 0 0;
+  text-align: center;
+  word-spacing: 0.2px;
+  letter-spacing: 0.1px; }
+
+#button_donate_now {
+  width: inherit;
+  position: absolute;
+  text-align: center;
+  margin-top: 362px; }
+
+#button_donate_now p {
+  color: RGB(70, 166, 91);
+  font-family: Open Sans;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+  padding: 7px 58px 13px 53px;
+  box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 70px / 70px;
+  display: inline-block;
+  background-color: white; }
 
 /*
 
@@ -122,58 +149,7 @@ body {
   height: 61px;
   z-index: 8;
 }
-.Welcome_to_my_charity_Lorem_Ipsum_is_simply_dum {
-  font-size: 50px;
-  font-family: "Roboto Slab";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
-  position: absolute;
-  left: 317.297px;
-  top: 333.727px;
-  z-index: 7;
-}
-.Layer_16 {
-  background-image: url("Layer 16.png");
-  opacity: 0.49;
-  position: absolute;
-  left: 0px;
-  top: 100px;
-  width: 1400px;
-  height: 626px;
-  z-index: 6;
-}
-.Layer_11 {
-  background-image: url("Layer 11.png");
-  position: absolute;
-  left: 860px;
-  top: 41px;
-  width: 540px;
-  height: 928px;
-  z-index: 5;
-}
-.Layer_8 {
-  background-image: url("Layer 8.png");
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1400px;
-  height: 1985px;
-  z-index: 4;
-}
-.Layer_6 {
-  background-image: url("Layer 6.png");
-  position: absolute;
-  left: 0px;
-  top: 116px;
-  width: 1400px;
-  height: 603px;
-  z-index: 3;
-}
 
-}
 
 
 */
