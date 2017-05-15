@@ -52,16 +52,16 @@ body {
   list-style-type: none; }
 
 .header_navigation ul li {
-  text-transform: uppercase;
   display: inline-block;
-  font-size: 13.9px;
-  margin: 0 3px 0 0; }
+  margin: 0 3px 0 0;
+  text-transform: uppercase;
+  font-size: 13.9px; }
 
 .header_navigation ul li a {
-  text-decoration: none;
-  color: RGB(108, 109, 109);
   padding: 7.5px 16px;
-  border-radius: 2px; }
+  border-radius: 2px;
+  text-decoration: none;
+  color: RGB(108, 109, 109); }
 
 .header_navigation ul li:first-child a {
   background-color: RGB(155, 36, 45);
@@ -88,62 +88,57 @@ body {
   font-family: Roboto Slab, serif; }
 
 .banner_words p:first-child {
+  margin: 215px 4px 0 0;
+  text-align: center;
   text-transform: uppercase;
   font-size: 50px;
   font-weight: bold;
-  margin: 211px 5px 0 0;
-  letter-spacing: 0.5px;
-  text-align: center; }
+  line-height: 1.2;
+  letter-spacing: 0.5px; }
 
 .banner_words p:last-child {
-  font-weight: 100;
-  font-size: 24px;
-  margin: -1px 5px 0 0;
+  margin: 4px 5px 0 0;
   text-align: center;
+  font-size: 24px;
+  font-weight: 100;
   word-spacing: 0.2px;
+  line-height: 1.2;
   letter-spacing: 0.1px; }
 
 #button_donate_now {
-  width: inherit;
   position: absolute;
-  text-align: center;
-  margin-top: 362px; }
+  width: inherit;
+  margin-top: 362px;
+  text-align: center; }
 
-#button_donate_now p {
-  color: RGB(70, 166, 91);
+#button_donate_now a {
+  display: inline-block;
+  margin: 0;
+  padding: 11px 58px 13px 53px;
+  text-decoration: none;
   font-family: Open Sans;
   font-size: 26px;
   font-weight: bold;
-  margin: 0;
-  padding: 7px 58px 13px 53px;
+  color: RGB(70, 166, 81);
+  line-height: 1.2;
   box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.07);
   border-radius: 70px / 70px;
-  display: inline-block;
   background-color: white; }
 
 /* -- стили bellow_banner -- */
 /*
 
-}
-.Rectangle_2 {
-  background-color: rgb(241, 239, 236);
+.Donate_now {
+  font-size: 26px;
+  font-family: "Open Sans";
+  color: rgb(70, 166, 81);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
   position: absolute;
-  left: 0px;
-  top: 718px;
-  width: 540px;
-  height: 316px;
-  z-index: 49;
-}
-
-.Rounded_Rectangle_1 {
-  border-radius: 2px;
-  background-color: rgb(155, 36, 45);
-  position: absolute;
-  left: 541px;
-  top: 41px;
-  width: 73px;
-  height: 34px;
-  z-index: 13;
+  left: 619.657px;
+  top: 488.4px;
+  z-index: 9;
 }
 
 
