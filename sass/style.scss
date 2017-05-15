@@ -73,34 +73,42 @@ body {
 /* -- стили header -- */
 
 #logo {
-	padding: 35px 0px 0px 188px;
+	padding: 35px 0px 0px 187px;
 	display: inline-block;
 }
 
 .header_navigation {
 	float: right;
-	padding: 26px 192px 0px 0px;
+	padding: 30px 190px 0px 0px;
 }
 
 .header_navigation ul {
-	list-style-type: none;
 	font-family: $text_font_Roboto_Slab, serif;
-	font-size: 14px;
-	color: $color_font_button_off_header;
+	list-style-type: none;
 }
 
 .header_navigation ul li {
 	text-transform: uppercase;
 	display: inline-block;
-	padding: 8px 15px;
-	margin-left: 5px;
-	border-radius: 3px;
+	font-size: 13.9px;
+	margin: 0 3px 0 0;
+
+}
+.header_navigation ul li a {
+	text-decoration: none;
+	color: $color_font_button_off_header;
+	padding: 7.5px 16px;
+	border-radius: 2px;
 }
 
-.header_navigation ul li:first-child {
+.header_navigation ul li:first-child a {
 	background-color: $color_button_header;
 	color: $color_font_button_on_header;
 }
+
+
+
+
 /* -- стили banner -- */
 
 .banner .background_filter {
@@ -182,38 +190,40 @@ body {
 	background-color: $color_button_donate_now;
 }
 
+
+/* -- стили bellow_banner -- */
+
+.bellow_banner .logo {
+	
+
+}
+
+
+
 /*
 
 }
-
-.Donate_now {
-  font-size: 26px;
-  font-family: "OpenSans";
-  color: rgb(70, 166, 81);
-  font-weight: bold;
-  line-height: 1.2;
-  text-align: center;
+.Rectangle_2 {
+  background-color: rgb(241, 239, 236);
   position: absolute;
-  left: 619.938px;
-  top: 488.4px;
-  z-index: 9;
-}
-.Rounded_Rectangle_2 {
-  border-style: solid;
-  border-width: 6px;
-  border-color: rgb(0, 0, 0);
-  background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
-  opacity: 0.07;
-  position: absolute;
-  left: 558px;
-  top: 469px;
-  width: 273px;
-  height: 61px;
-  z-index: 8;
+  left: 0px;
+  top: 718px;
+  width: 540px;
+  height: 316px;
+  z-index: 49;
 }
 
+.Rounded_Rectangle_1 {
+  border-radius: 2px;
+  background-color: rgb(155, 36, 45);
+  position: absolute;
+  left: 541px;
+  top: 41px;
+  width: 73px;
+  height: 34px;
+  z-index: 13;
+}
 
 
 */
+
