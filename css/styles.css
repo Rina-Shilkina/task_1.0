@@ -4,6 +4,7 @@
 /* -- общие переменные --*/
 /* -- переменные header --*/
 /* -- переменные banner --*/
+/* -- переменные below-banner --*/
 /* -- общие стили --*/
 body {
   background-color: green;
@@ -25,8 +26,7 @@ body {
 
 .bellow_banner {
   width: 1400px;
-  height: 950px;
-  background-color: RGB(70, 166, 81); }
+  height: 950px; }
 
 .latest_events {
   width: 1400px;
@@ -39,7 +39,7 @@ body {
   background-color: RGB(55, 56, 56); }
 
 /* -- стили header -- */
-#logo {
+.header #logo {
   padding: 35px 0px 0px 187px;
   display: inline-block; }
 
@@ -108,13 +108,13 @@ body {
 #button_donate_now {
   position: absolute;
   width: inherit;
-  margin-top: 362px;
+  margin-top: 361px;
   text-align: center; }
 
 #button_donate_now a {
   display: inline-block;
   margin: 0;
-  padding: 11px 58px 13px 53px;
+  padding: 11px 58px 15px 53px;
   text-decoration: none;
   font-family: Open Sans;
   font-size: 26px;
@@ -126,20 +126,38 @@ body {
   background-color: white; }
 
 /* -- стили bellow_banner -- */
+.bellow_banner .logo {
+  position: absolute;
+  width: 540px;
+  height: 316px;
+  background-color: RGB(241, 239, 236); }
+
+.bellow_banner .logo img {
+  position: absolute;
+  margin: 128px 0 0 215px; }
+
+.bellow_banner .picture_moss img {
+  margin: 0 0 0 540px; }
+
+.bellow_banner .donate_now {
+  position: absolute;
+  width: 545px;
+  height: 316px;
+  background-color: RGB(155, 36, 45);
+  margin: 0 0 0 540px; }
+
 /*
 
-.Donate_now {
-  font-size: 26px;
-  font-family: "Open Sans";
-  color: rgb(70, 166, 81);
-  font-weight: bold;
-  line-height: 1.2;
-  text-align: center;
+.Rectangle_4 {
+  background-color: rgb(155, 36, 45);
   position: absolute;
-  left: 619.657px;
-  top: 488.4px;
-  z-index: 9;
+  left: 860px;
+  top: 718px;
+  width: 545px;
+  height: 316px;
+  z-index: 53;
 }
+
 
 
 */
