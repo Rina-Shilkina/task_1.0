@@ -152,10 +152,10 @@ body {
   color: RGB(255, 255, 255); }
 
 .bellow_banner .donate_now p:first-child {
-  color: RGB(255, 255, 255);
   font-family: Roboto Slab, serif;
   font-size: 40px;
   font-weight: bold;
+  color: RGB(255, 255, 255);
   line-height: 0.55;
   margin: 126px 0 0 42px; }
 
@@ -165,19 +165,43 @@ body {
   font-weight: 100;
   color: RGB(255, 255, 255);
   line-height: 1.375;
-  margin: 15px 0 0 46px;
-  letter-spacing: 0.2px; }
+  letter-spacing: 0.2px;
+  margin: 15px 0 0 46px; }
+
+.bellow_banner .sign_up {
+  width: 860px;
+  height: 317px;
+  float: left;
+  background-color: RGB(70, 166, 81); }
+
+.bellow_banner .leaf {
+  width: 680px;
+  height: 779px;
+  float: right;
+  background: url(../images/below_banner/leaf.png); }
+
+.bellow_banner .sign_up p:first-child {
+  font-family: Roboto Slab, serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: RGB(255, 255, 255);
+  line-height: 0.55;
+  text-align: right;
+  margin: 74px 78px 0 0; }
 
 /*
-.Lorem_Ipsum_is_simply_dummy_text_ {
 
-
-  text-align: left;
+.Layer_17 {
+  background-image: url("Layer 17.png");
   position: absolute;
-  left: 904.937px;
-  top: 902.546px;
-  z-index: 54;
+  left: 720px;
+  top: 889px;
+  width: 680px;
+  height: 779px;
+  z-index: 43;
 }
+
+
 
 
 

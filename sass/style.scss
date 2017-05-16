@@ -34,6 +34,7 @@ $color_button_donate_now: white;
 $color_background_below_banner_left_top: RGB(241, 239, 236);
 $color_background_below_banner_right_top: RGB(155, 36, 45);
 $color_text_bellow_banner: RGB(255, 255, 255);
+$color_background_sign_up: RGB(70, 166, 81);
 
 
 /* -- общие стили --*/
@@ -229,11 +230,10 @@ body {
 }
 
 .bellow_banner .donate_now p:first-child {
-	color:$color_text_bellow_banner;
-
 	font-family: $text_font_Roboto_Slab, serif;
 	font-size: 40px;
 	font-weight: bold;
+	color:$color_text_bellow_banner;
 	line-height: 0.55;
 
 	margin: 126px 0 0 42px;
@@ -246,23 +246,55 @@ body {
 	font-weight: 100;
 	color:$color_text_bellow_banner;
 	line-height: 1.375;
-	margin: 15px 0 0 46px;
 	letter-spacing: 0.2px;
+
+	margin: 15px 0 0 46px;
+}
+
+.bellow_banner .sign_up {
+	width: 860px;
+	height: 317px;
+
+	float: left;
+
+	background-color: $color_background_sign_up;
+}
+.bellow_banner .leaf {
+	width: 680px;
+	height: 779px;
+
+	float: right;
+	background: url(../images/below_banner/leaf.png);
+}
+
+.bellow_banner .sign_up p:first-child {
+
+	font-family: $text_font_Roboto_Slab, serif;
+	font-size: 40px;
+	font-weight: bold;	
+	color:$color_text_bellow_banner;
+	line-height: 0.55;
+	text-align: right;
+
+	margin: 74px 78px 0 0;
+
 }
 
 
 /*
-.Lorem_Ipsum_is_simply_dummy_text_ {
 
-
-  text-align: left;
+.Layer_17 {
+  background-image: url("Layer 17.png");
   position: absolute;
-  left: 904.937px;
-  top: 902.546px;
-  z-index: 54;
+  left: 720px;
+  top: 889px;
+  width: 680px;
+  height: 779px;
+  z-index: 43;
 }
 
 
 
-*/
 
+
+*/
