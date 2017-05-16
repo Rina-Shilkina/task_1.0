@@ -2,12 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,400');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
 
 /* -- общие переменные --*/
 
 $color-test: green;
 $text_font_Roboto_Slab: Roboto Slab;
 $text_font_Open_Sans: Open Sans;
+$text_font_Roboto: Roboto;
 
 /* -- переменные header --*/
 $color-head: white;
@@ -31,6 +33,7 @@ $color_button_donate_now: white;
 
 $color_background_below_banner_left_top: RGB(241, 239, 236);
 $color_background_below_banner_right_top: RGB(155, 36, 45);
+$color_text_bellow_banner: RGB(255, 255, 255);
 
 
 /* -- общие стили --*/
@@ -88,7 +91,7 @@ body {
 }
 
 .header_navigation ul {
-	font-family: $text_font_Roboto_Slab, serif;
+	font-family: $text_font_Roboto_Slab;
 	list-style-type: none;
 }
 
@@ -111,7 +114,6 @@ body {
 
 .header_navigation ul li:first-child a {
 	background-color: $color_button_header;
-
 	color: $color_font_button_on_header;
 }
 
@@ -193,45 +195,71 @@ body {
 /* -- стили bellow_banner -- */
 
 .bellow_banner .logo {
-	position: absolute;
 	width: 540px;
 	height: 316px;
+
+	float: left;
 
 	background-color: $color_background_below_banner_left_top;
 }
 
 .bellow_banner .logo img{
-	position: absolute;
 	margin: 128px 0 0 215px;
 }
 
-.bellow_banner .picture_moss img{
-	margin: 0 0 0 540px;
+.bellow_banner .picture_moss {
+	float: left;
+  	width: 320px;
+  	height: 316px;
+
+	background: url(../images/below_banner/moss.png);
+
 }
 
 .bellow_banner .donate_now {
-	position: absolute;
-	width: 545px;
+	float: right;
+	width: 540px;
 	height: 316px;
 
 	background-color: $color_background_below_banner_right_top;
+}
 
-	margin: 0 0 0 540px;
+.bellow_banner .donate_now p {
+	color:$color_text_bellow_banner;
+}
+
+.bellow_banner .donate_now p:first-child {
+	color:$color_text_bellow_banner;
+
+	font-family: $text_font_Roboto_Slab, serif;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 0.55;
+
+	margin: 126px 0 0 42px;
+
+}
+.bellow_banner .donate_now p:last-child {
+	
+	font-family: $text_font_Roboto;
+	font-size: 16px;
+	font-weight: 100;
+	color:$color_text_bellow_banner;
+	line-height: 1.375;
+	margin: 15px 0 0 46px;
+	letter-spacing: 0.2px;
 }
 
 
-
-
 /*
+.Lorem_Ipsum_is_simply_dummy_text_ {
 
-.Rectangle_4 {
-  background-color: rgb(155, 36, 45);
+
+  text-align: left;
   position: absolute;
-  left: 860px;
-  top: 718px;
-  width: 545px;
-  height: 316px;
-  z-index: 53;
+  left: 904.937px;
+  top: 902.546px;
+  z-index: 54;
 }
 
 
