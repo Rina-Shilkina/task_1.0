@@ -335,23 +335,24 @@ body {
 	height: 383px;
 
 	background-color: $color_footer;
+
+	display: flex;
+	align-items: flex-start;
 }
 .footer .footer_navigation {
-	width: 840px;
-	
-	margin: 0 auto;
-
+	width: 829px;
+	margin: 0 265px;
 }
-
-
 
 .footer .footer_navigation ul {
 	font-family: $text_font_Roboto_Slab;
-	list-style-type: none;	
+	list-style-type: none;
+
+	height: 63px;
+
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-end;
-
 }
 
 .footer .footer_navigation ul li a {
@@ -362,7 +363,10 @@ body {
 	line-height: 1.467;
 }
 
+.footer .horizontal line_top {
 
+
+}
 
 
 
@@ -383,6 +387,16 @@ body {
   z-index: 80;
 }
 
+.Shape_2 {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.102;
+  position: absolute;
+  left: 188px;
+  top: 2481px;
+  width: 1024px;
+  height: 1px;
+  z-index: 82;
+}
 
 
 
