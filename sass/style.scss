@@ -4,16 +4,22 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
 
+
+
 /* -- общие переменные --*/
+
 
 $color-test: green;
 $text_font_Roboto_Slab: Roboto Slab;
 $text_font_Open_Sans: Open Sans;
 $text_font_Roboto: Roboto;
 
-/* -- переменные header --*/
-$color-head: white;
 
+
+/* -- переменные header --*/
+
+
+$color-head: white;
 $color_bellow_banner: RGB(70, 166, 81);
 $color_latest_events: RGB(155, 36, 45);
 $color_footer: RGB(55, 56, 56);
@@ -22,22 +28,40 @@ $color_font_button_on_header: RGB(241, 239, 236);
 $color_button_header: RGB(155, 36, 45);
 
 
+
 /* -- переменные banner --*/
+
 
 $color_font_banner: white;
 $color_filter_banner: RGB(155, 36, 45);
 $color_text_donate_now: RGB(70, 166, 81);
 $color_button_donate_now: white;
 
+
+
 /* -- переменные below-banner --*/
+
 
 $color_background_below_banner_left_top: RGB(241, 239, 236);
 $color_background_below_banner_right_top: RGB(155, 36, 45);
 $color_text_bellow_banner: RGB(255, 255, 255);
 $color_background_sign_up: RGB(70, 166, 81);
+$color_background_facebook: RGB(59, 89, 151);
+
+
+
+/* -- переменные footer --*/
+
+$color_text_navigation: RGB(241, 239, 236);
+
+
+
+
 
 
 /* -- общие стили --*/
+
+
 
 body {
 	background-color: $color-test;
@@ -50,22 +74,6 @@ body {
 	margin: 0px auto;
 }
 
-.header {
-	width: 1400px;
-	height: 116px;
-	background-color: $color-head;
-}
-
-.banner {
-	width: 1400px;
-	height: 603px;
-}
-
-.bellow_banner {
-	width: 1400px;
-	height: 950px;
-	//background-color: $color_bellow_banner;
-}
 
 .latest_events {
 	width: 1400px;
@@ -73,13 +81,17 @@ body {
 	background-color: $color_latest_events;
 }
 
-.footer {
-	width: 1400px;
-	height: 383px;
-	background-color: $color_footer;
-}
+
 
 /* -- стили header -- */
+
+
+
+.header {
+	width: 1400px;
+	height: 116px;
+	background-color: $color-head;
+}
 
 .header #logo {
 	padding: 35px 0px 0px 187px;
@@ -119,7 +131,15 @@ body {
 }
 
 
+
 /* -- стили banner -- */
+
+
+
+.banner {
+	width: 1400px;
+	height: 603px;
+}
 
 .banner .background_filter {
 	width: inherit;
@@ -193,13 +213,21 @@ body {
 }
 
 
+
 /* -- стили bellow_banner -- */
+
+
+
+.bellow_banner {
+	width: 1400px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	}
 
 .bellow_banner .logo {
 	width: 540px;
 	height: 316px;
-
-	float: left;
 
 	background-color: $color_background_below_banner_left_top;
 }
@@ -209,16 +237,13 @@ body {
 }
 
 .bellow_banner .picture_moss {
-	float: left;
   	width: 320px;
   	height: 316px;
 
 	background: url(../images/below_banner/moss.png);
-
 }
 
 .bellow_banner .donate_now {
-	float: right;
 	width: 540px;
 	height: 316px;
 
@@ -237,10 +262,9 @@ body {
 	line-height: 0.55;
 
 	margin: 126px 0 0 42px;
-
 }
+
 .bellow_banner .donate_now p:last-child {
-	
 	font-family: $text_font_Roboto;
 	font-size: 16px;
 	font-weight: 100;
@@ -252,20 +276,25 @@ body {
 }
 
 .bellow_banner .sign_up {
+	position: relative;	
+	z-index: 2;
+
 	width: 860px;
 	height: 317px;
 
-	float: left;
-
 	background-color: $color_background_sign_up;
 }
-.bellow_banner .leaf {
+
+/*.bellow_banner .leaf {
 	width: 680px;
 	height: 779px;
 
-	float: right;
+	position: relative;	
+	z-index: 1;
+
+
 	background: url(../images/below_banner/leaf.png);
-}
+}*/
 
 .bellow_banner .sign_up p:first-child {
 
@@ -280,19 +309,79 @@ body {
 
 }
 
+.bellow_banner .grass {
+	width: 860px;
+	height: 317px;
 
-/*
-
-.Layer_17 {
-  background-image: url("Layer 17.png");
-  position: absolute;
-  left: 720px;
-  top: 889px;
-  width: 680px;
-  height: 779px;
-  z-index: 43;
+	background: url(../images/below_banner/grass.png);
 }
 
+.bellow_banner .facebook {
+	width: 320px;
+	height: 317px;
+
+	background-color: $color_background_facebook;
+}
+
+
+
+/* -- стили footer -- */
+
+
+
+.footer {
+	position: absolute;
+	width: 1400px;
+	height: 383px;
+
+	background-color: $color_footer;
+}
+.footer .footer_navigation {
+	width: 840px;
+	
+	margin: 0 auto;
+
+}
+
+
+
+.footer .footer_navigation ul {
+	font-family: $text_font_Roboto_Slab;
+	list-style-type: none;	
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+
+}
+
+.footer .footer_navigation ul li a {
+	font-size: 15px;
+	font-weight: 100;
+	text-decoration: none;
+	color: $color_text_navigation; 
+	line-height: 1.467;
+}
+
+
+
+
+
+
+
+
+
+/*
+.Home________________About_us________________Pro {
+  font-size: 15px;
+  font-family: "Roboto Slab";
+  color: rgb(241, 239, 236);
+  line-height: 1.467;
+  text-align: left;
+  position: absolute;
+  left: 331.756px;
+  top: 2428.666px;
+  z-index: 80;
+}
 
 
 

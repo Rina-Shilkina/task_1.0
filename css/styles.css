@@ -6,6 +6,7 @@
 /* -- переменные header --*/
 /* -- переменные banner --*/
 /* -- переменные below-banner --*/
+/* -- переменные footer --*/
 /* -- общие стили --*/
 body {
   background-color: green;
@@ -16,30 +17,17 @@ body {
   height: 2733px;
   margin: 0px auto; }
 
-.header {
-  width: 1400px;
-  height: 116px;
-  background-color: white; }
-
-.banner {
-  width: 1400px;
-  height: 603px; }
-
-.bellow_banner {
-  width: 1400px;
-  height: 950px; }
-
 .latest_events {
   width: 1400px;
   height: 681px;
   background-color: RGB(155, 36, 45); }
 
-.footer {
-  width: 1400px;
-  height: 383px;
-  background-color: RGB(55, 56, 56); }
-
 /* -- стили header -- */
+.header {
+  width: 1400px;
+  height: 116px;
+  background-color: white; }
+
 .header #logo {
   padding: 35px 0px 0px 187px;
   display: inline-block; }
@@ -69,6 +57,10 @@ body {
   color: RGB(241, 239, 236); }
 
 /* -- стили banner -- */
+.banner {
+  width: 1400px;
+  height: 603px; }
+
 .banner .background_filter {
   width: inherit;
   height: inherit;
@@ -127,23 +119,25 @@ body {
   background-color: white; }
 
 /* -- стили bellow_banner -- */
+.bellow_banner {
+  width: 1400px;
+  display: flex;
+  flex-wrap: wrap; }
+
 .bellow_banner .logo {
   width: 540px;
   height: 316px;
-  float: left;
   background-color: RGB(241, 239, 236); }
 
 .bellow_banner .logo img {
   margin: 128px 0 0 215px; }
 
 .bellow_banner .picture_moss {
-  float: left;
   width: 320px;
   height: 316px;
   background: url(../images/below_banner/moss.png); }
 
 .bellow_banner .donate_now {
-  float: right;
   width: 540px;
   height: 316px;
   background-color: RGB(155, 36, 45); }
@@ -169,17 +163,22 @@ body {
   margin: 15px 0 0 46px; }
 
 .bellow_banner .sign_up {
+  position: relative;
+  z-index: 2;
   width: 860px;
   height: 317px;
-  float: left;
   background-color: RGB(70, 166, 81); }
 
-.bellow_banner .leaf {
-  width: 680px;
-  height: 779px;
-  float: right;
-  background: url(../images/below_banner/leaf.png); }
+/*.bellow_banner .leaf {
+	width: 680px;
+	height: 779px;
 
+	position: relative;	
+	z-index: 1;
+
+
+	background: url(../images/below_banner/leaf.png);
+}*/
 .bellow_banner .sign_up p:first-child {
   font-family: Roboto Slab, serif;
   font-size: 40px;
@@ -189,18 +188,53 @@ body {
   text-align: right;
   margin: 74px 78px 0 0; }
 
-/*
+.bellow_banner .grass {
+  width: 860px;
+  height: 317px;
+  background: url(../images/below_banner/grass.png); }
 
-.Layer_17 {
-  background-image: url("Layer 17.png");
+.bellow_banner .facebook {
+  width: 320px;
+  height: 317px;
+  background-color: RGB(59, 89, 151); }
+
+/* -- стили footer -- */
+.footer {
   position: absolute;
-  left: 720px;
-  top: 889px;
-  width: 680px;
-  height: 779px;
-  z-index: 43;
-}
+  width: 1400px;
+  height: 383px;
+  background-color: RGB(55, 56, 56); }
 
+.footer .footer_navigation {
+  width: 840px;
+  margin: 0 auto; }
+
+.footer .footer_navigation ul {
+  font-family: Roboto Slab;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end; }
+
+.footer .footer_navigation ul li a {
+  font-size: 15px;
+  font-weight: 100;
+  text-decoration: none;
+  color: RGB(241, 239, 236);
+  line-height: 1.467; }
+
+/*
+.Home________________About_us________________Pro {
+  font-size: 15px;
+  font-family: "Roboto Slab";
+  color: rgb(241, 239, 236);
+  line-height: 1.467;
+  text-align: left;
+  position: absolute;
+  left: 331.756px;
+  top: 2428.666px;
+  z-index: 80;
+}
 
 
 
