@@ -203,15 +203,18 @@ body {
   position: absolute;
   width: 1400px;
   height: 383px;
-  background-color: RGB(55, 56, 56); }
+  background-color: RGB(55, 56, 56);
+  display: flex;
+  align-items: flex-start; }
 
 .footer .footer_navigation {
-  width: 840px;
-  margin: 0 auto; }
+  width: 829px;
+  margin: 0 265px; }
 
 .footer .footer_navigation ul {
   font-family: Roboto Slab;
   list-style-type: none;
+  height: 63px;
   display: flex;
   justify-content: space-around;
   align-items: flex-end; }
@@ -236,6 +239,16 @@ body {
   z-index: 80;
 }
 
+.Shape_2 {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.102;
+  position: absolute;
+  left: 188px;
+  top: 2481px;
+  width: 1024px;
+  height: 1px;
+  z-index: 82;
+}
 
 
 
