@@ -328,13 +328,11 @@ body {
 /* -- стили footer -- */
 
 
-
-.footer {
-
+.b-footer {
 	background-color: $color_footer;
 }
 
-.footer .footer_content {
+.b-footer .content {
 	position: absolute;
 	width: 1400px;
 
@@ -342,85 +340,58 @@ body {
 
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-start;
+	justify-content: center;
 }
 
-.footer .footer_navigation {
-	width: 789px;
-	margin: 0 306px;
+.b-footer .top-block {
+	width: 1024px;
 
+	display: flex;
+	justify-content: center;
+
+	border-bottom: 1px solid $color_text_navigation;
 }
 
-.footer .menu {
+.b-footer__menu-item {
+	width: 730px;
+}
 
-
-	border-bottom-style: solid;
-	border-bottom-color: $color_text_navigation;
-	border-bottom-width: 1px;
-	}
-
-.footer .footer_navigation ul {
+.b-footer__menu-item ul {
 	font-family: $text_font_Roboto_Slab;
 	list-style-type: none;
 
 	display: flex;
-	//justify-content: space-around;
 	justify-content: space-between;
 	padding: 0;
-	margin: 57px 0 43px 0;
+	margin: 57px 0 52px 0;
 }
 
-.footer .footer_navigation ul li a {
+.b-footer__menu-item ul li a {
 	font-size: 15px;
-	font-weight: 100;
 	text-decoration: none;
-	color: $color_text_navigation; 
-	line-height: 1.467;
-	letter-spacing: 0.25px;
-	//word-spacing: 0.5px;
-}
-
-/*.footer .horizontal_line {
-	margin: auto;
-
-}
-
-
-.footer .horizontal_line_top {
-	display: flex;
-	align-items: center;
-
-}*/
-
-/*.footer .horizontal_line_top hr {
-	width: 1020px;
-
-	border-style: solid;
 	color: $color_text_navigation;
-	border-width: thin;
 
-
-}*/
-
-
+	line-height: 1.467;
+	word-spacing: 1px;
+}
 
 
 
 
 
 /*
-.Shape_2 {
-  background-color: rgb(255, 255, 255);
-  opacity: 0.102;
+.My_Charity_©_2013_Allright_Reserved {
+  font-size: 15px;
+  font-family: "Roboto Slab";
+  color: rgb(119, 119, 119);
+  line-height: 1.467;
+  text-align: left;
   position: absolute;
-  left: 188px;
-  top: 2481px;
-  width: 1024px;
-  height: 1px;
-  z-index: 82;
+  left: 570.484px;
+  top: 2693.666px;
+  z-index: 81;
 }
 
-}
 
 
 
