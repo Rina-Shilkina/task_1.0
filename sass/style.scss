@@ -52,7 +52,7 @@ $color_background_facebook: RGB(59, 89, 151);
 
 /* -- переменные footer --*/
 
-$color_text_navigation: RGB(241, 239, 236);
+$color_text_navigation: RGB(129, 129, 129);
 
 
 
@@ -330,29 +330,44 @@ body {
 
 
 .footer {
+
+	background-color: $color_footer;
+}
+
+.footer .footer_content {
 	position: absolute;
 	width: 1400px;
-	height: 383px;
 
 	background-color: $color_footer;
 
 	display: flex;
+	flex-wrap: wrap;
 	align-items: flex-start;
 }
+
 .footer .footer_navigation {
-	width: 829px;
-	margin: 0 265px;
+	width: 789px;
+	margin: 0 306px;
+
 }
+
+.footer .menu {
+
+
+	border-bottom-style: solid;
+	border-bottom-color: $color_text_navigation;
+	border-bottom-width: 1px;
+	}
 
 .footer .footer_navigation ul {
 	font-family: $text_font_Roboto_Slab;
 	list-style-type: none;
 
-	height: 63px;
-
 	display: flex;
-	justify-content: space-around;
-	align-items: flex-end;
+	//justify-content: space-around;
+	justify-content: space-between;
+	padding: 0;
+	margin: 57px 0 43px 0;
 }
 
 .footer .footer_navigation ul li a {
@@ -361,12 +376,31 @@ body {
 	text-decoration: none;
 	color: $color_text_navigation; 
 	line-height: 1.467;
+	letter-spacing: 0.25px;
+	//word-spacing: 0.5px;
 }
 
-.footer .horizontal line_top {
-
+/*.footer .horizontal_line {
+	margin: auto;
 
 }
+
+
+.footer .horizontal_line_top {
+	display: flex;
+	align-items: center;
+
+}*/
+
+/*.footer .horizontal_line_top hr {
+	width: 1020px;
+
+	border-style: solid;
+	color: $color_text_navigation;
+	border-width: thin;
+
+
+}*/
 
 
 
@@ -375,18 +409,6 @@ body {
 
 
 /*
-.Home________________About_us________________Pro {
-  font-size: 15px;
-  font-family: "Roboto Slab";
-  color: rgb(241, 239, 236);
-  line-height: 1.467;
-  text-align: left;
-  position: absolute;
-  left: 331.756px;
-  top: 2428.666px;
-  z-index: 80;
-}
-
 .Shape_2 {
   background-color: rgb(255, 255, 255);
   opacity: 0.102;
@@ -396,6 +418,8 @@ body {
   width: 1024px;
   height: 1px;
   z-index: 82;
+}
+
 }
 
 
