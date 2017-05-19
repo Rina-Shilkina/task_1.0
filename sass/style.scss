@@ -69,7 +69,7 @@ body {
 }
 
 .page {
-	width: 1400px;
+
 	height: 2733px;
 	margin: 0px auto;
 }
@@ -88,7 +88,7 @@ body {
 
 
 .header {
-	width: 1400px;
+	//width: 1400px;
 	height: 116px;
 	background-color: $color-head;
 }
@@ -330,21 +330,27 @@ body {
 
 .b-footer {
 	background-color: $color_footer;
+
+	width: 100%;
+
 }
 
-.b-footer .content {
-	position: absolute;
-	width: 1400px;
+b-footer__content {
+	max-width: 1400px;
 
 	background-color: $color_footer;
 
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
 }
 
-.b-footer .top-block {
+.b-footer__top-block {
 	width: 1024px;
+
+	margin: 0 auto;
 
 	display: flex;
 	justify-content: center;
@@ -356,7 +362,7 @@ body {
 	width: 730px;
 }
 
-.b-footer__menu-item ul {
+.b-footer__menu {
 	font-family: $text_font_Roboto_Slab;
 	list-style-type: none;
 
@@ -366,7 +372,7 @@ body {
 	margin: 57px 0 52px 0;
 }
 
-.b-footer__menu-item ul li a {
+.b-footer__menu__href {
 	font-size: 15px;
 	text-decoration: none;
 	color: $color_text_navigation;
@@ -375,23 +381,43 @@ body {
 	word-spacing: 1px;
 }
 
+.b-footer__middle-block {
+	width: 1024px;
+	margin: 0 auto;
+	border-bottom: 1px solid $color_text_navigation; 
+	display: flex;
+	justify-content: space-around;
+}
 
+.b-footer__folow {
+	dispay: flex;
+	justify-content: flex start;
+}
+
+.b-footer__icon {
+	display: flex;
+}
+
+.b-footer__form {
+	display: flex;
+}
+
+.b-footer__text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.b-footer__bottom-block {
+	width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
 
 
 
 /*
-.My_Charity_©_2013_Allright_Reserved {
-  font-size: 15px;
-  font-family: "Roboto Slab";
-  color: rgb(119, 119, 119);
-  line-height: 1.467;
-  text-align: left;
-  position: absolute;
-  left: 570.484px;
-  top: 2693.666px;
-  z-index: 81;
-}
-
 
 
 
