@@ -243,7 +243,7 @@ b-footer__content {
 .b-footer__middle-block {
   width: 1024px;
   padding-bottom: 36px;
-  margin: 0 auto;
+  margin: 0 auto 33px;
   border-bottom: 1px solid RGB(129, 129, 129);
   display: flex;
   justify-content: space-between; }
@@ -266,9 +266,15 @@ b-footer__content {
 .b-footer .icon__item {
   margin-right: 10px; }
 
+.b-footer__news-letter {
+  margin-left: -87px; }
+
 .b-footer__news-letter-text {
+  margin-bottom: 13px;
+  font-family: Roboto Slab, serif;
   font-size: 18px;
-  color: RGB(198, 198, 198); }
+  color: RGB(198, 198, 198);
+  line-height: 1.2; }
 
 .b-footer__form {
   display: flex; }
@@ -277,6 +283,15 @@ b-footer__content {
   display: flex;
   flex-direction: column;
   align-items: flex-end; }
+
+.b-footer__input-text input[type=text] {
+  width: 199px;
+  height: 38px;
+  border: none;
+  background-color: RGB(73, 73, 73); }
+
+.b-footer__input-text input[type="text"]::-moz-placeholder {
+  color: black; }
 
 .b-footer__text__contact {
   font-family: Roboto Slab, serif;
@@ -296,38 +311,27 @@ b-footer__content {
 /*				-- нижний блок --			*/
 .b-footer__bottom-block {
   width: 1024px;
+  padding-bottom: 39px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around; }
 
 .b-footer__сopyright {
-  color: RGB(129, 129, 129); }
+  font-family: Roboto Slab, serif;
+  font-size: 15px;
+  color: RGB(129, 129, 129);
+  line-height: 1.467; }
 
 /*
 
-.Contact_Us {
-  font-size: 18px;
-  font-family: "Roboto Slab";
-  color: rgb(198, 198, 198);
+.News_letter {
+
   line-height: 1.2;
   text-align: center;
   position: absolute;
-  left: 1117.375px;
-  top: 2520.7px;
-  z-index: 68;
-}
-
-
-.Address_New_Street_ph_:xxxxx_xxx_xxx {
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgb(132, 132, 132);
-  line-height: 1.2;
-  text-align: right;
-  position: absolute;
-  left: 1098px;
-  top: 2552.603px;
-  z-index: 69;
+  left: 537.375px;
+  top: 2520.2px;
+  z-index: 67;
 }
 
 
