@@ -396,6 +396,7 @@ b-footer__content {
 
 .b-footer__middle-block {
 	width: 1024px;
+	padding-bottom: 36px; 
 	margin: 0 auto;
 	border-bottom: 1px solid $color_text_navigation; 
 
@@ -440,13 +441,24 @@ margin-right: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-
-	font-size: 18px;
-	color: $color-gray-text;
 }
 
 .b-footer__text__contact {
+	font-family: $text_font_Roboto_Slab, serif;
+	font-size: 18px;
 	color: $color-light-gray-text;	
+	line-height: 1.2;
+	margin-bottom: 12px;
+
+}
+
+.b-footer__text__address,
+.b-footer__text__street,
+.b-footer__text__phone {
+	font-family: $text_font_Open_Sans;
+	font-size: 14px;	
+	color: $color-gray-text;
+	line-height: 1.2;	
 }
 
 
@@ -488,17 +500,18 @@ margin-right: 10px;
 }
 
 
-.Follow_Us {
-  font-size: 18px;
-  font-family: "Roboto Slab";
-  color: rgb(198, 198, 198);
+.Address_New_Street_ph_:xxxxx_xxx_xxx {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(132, 132, 132);
   line-height: 1.2;
-  text-align: center;
+  text-align: right;
   position: absolute;
-  left: 187.375px;
-  top: 2520.2px;
-  z-index: 66;
+  left: 1098px;
+  top: 2552.603px;
+  z-index: 69;
 }
+
 
 
 
