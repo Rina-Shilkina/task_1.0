@@ -196,7 +196,7 @@ body {
   height: 317px;
   background-color: RGB(59, 89, 151); }
 
-/* -- стили footer -- */
+/*				-- стили footer --			*/
 .b-footer {
   background-color: RGB(55, 56, 56);
   width: 100%; }
@@ -210,12 +210,13 @@ b-footer__content {
   flex-direction: column;
   margin: 0 auto; }
 
+/*				-- верхний блок --			*/
 .b-footer__top-block {
   width: 1024px;
-  margin: 0 auto;
+  margin: 0 auto 39px;
+  border-bottom: 1px solid RGB(129, 129, 129);
   display: flex;
-  justify-content: center;
-  border-bottom: 1px solid RGB(129, 129, 129); }
+  justify-content: center; }
 
 .b-footer__menu-item {
   width: 730px; }
@@ -223,10 +224,10 @@ b-footer__content {
 .b-footer__menu {
   font-family: Roboto Slab;
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
   padding: 0;
-  margin: 57px 0 52px 0; }
+  margin: 57px 0 52px 0;
+  display: flex;
+  justify-content: space-between; }
 
 .b-footer__menu__href {
   font-size: 15px;
@@ -235,19 +236,38 @@ b-footer__content {
   line-height: 1.467;
   word-spacing: 1px; }
 
+.b-footer__menu__href .first {
+  color: green !important; }
+
+/*				-- средний блок --			*/
 .b-footer__middle-block {
   width: 1024px;
   margin: 0 auto;
   border-bottom: 1px solid RGB(129, 129, 129);
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .b-footer__folow {
   dispay: flex;
   justify-content: flex start; }
 
+.b-footer__folow-text {
+  margin-bottom: 13px;
+  font-family: Roboto Slab, serif;
+  font-size: 18px;
+  color: RGB(198, 198, 198);
+  word-spacing: -1px;
+  line-height: 1.2; }
+
 .b-footer__icon {
   display: flex; }
+
+.b-footer .icon__item {
+  margin-right: 10px; }
+
+.b-footer__news-letter-text {
+  font-size: 18px;
+  color: RGB(198, 198, 198); }
 
 .b-footer__form {
   display: flex; }
@@ -255,15 +275,49 @@ b-footer__content {
 .b-footer__text {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; }
+  align-items: flex-end;
+  font-size: 18px;
+  color: RGB(129, 129, 129); }
 
+.b-footer__text__contact {
+  color: RGB(198, 198, 198); }
+
+/*				-- нижний блок --			*/
 .b-footer__bottom-block {
   width: 1024px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around; }
 
+.b-footer__сopyright {
+  color: RGB(129, 129, 129); }
+
 /*
+
+.Contact_Us {
+  font-size: 18px;
+  font-family: "Roboto Slab";
+  color: rgb(198, 198, 198);
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 1117.375px;
+  top: 2520.7px;
+  z-index: 68;
+}
+
+
+.Follow_Us {
+  font-size: 18px;
+  font-family: "Roboto Slab";
+  color: rgb(198, 198, 198);
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 187.375px;
+  top: 2520.2px;
+  z-index: 66;
+}
 
 
 

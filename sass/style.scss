@@ -14,6 +14,9 @@ $text_font_Roboto_Slab: Roboto Slab;
 $text_font_Open_Sans: Open Sans;
 $text_font_Roboto: Roboto;
 
+$color-main-text: white;
+$color-gray-text: RGB(129, 129, 129);
+$color-light-gray-text: RGB(198, 198, 198);
 
 
 /* -- переменные header --*/
@@ -325,14 +328,12 @@ body {
 
 
 
-/* -- стили footer -- */
+/*				-- стили footer --			*/
 
 
 .b-footer {
 	background-color: $color_footer;
-
 	width: 100%;
-
 }
 
 b-footer__content {
@@ -347,15 +348,18 @@ b-footer__content {
 	margin: 0 auto;
 }
 
+	
+/*				-- верхний блок --			*/
+
+
 .b-footer__top-block {
 	width: 1024px;
 
-	margin: 0 auto;
+	margin: 0 auto 39px;
+	border-bottom: 1px solid $color_text_navigation;
 
 	display: flex;
 	justify-content: center;
-
-	border-bottom: 1px solid $color_text_navigation;
 }
 
 .b-footer__menu-item {
@@ -366,27 +370,37 @@ b-footer__content {
 	font-family: $text_font_Roboto_Slab;
 	list-style-type: none;
 
-	display: flex;
-	justify-content: space-between;
 	padding: 0;
 	margin: 57px 0 52px 0;
+
+	display: flex;
+	justify-content: space-between;
 }
+
 
 .b-footer__menu__href {
 	font-size: 15px;
 	text-decoration: none;
-	color: $color_text_navigation;
+	color: $color-gray-text;
 
 	line-height: 1.467;
 	word-spacing: 1px;
 }
 
+.b-footer__menu__href .first {
+	color: green !important;
+}
+
+/*				-- средний блок --			*/
+
+
 .b-footer__middle-block {
 	width: 1024px;
 	margin: 0 auto;
 	border-bottom: 1px solid $color_text_navigation; 
+
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .b-footer__folow {
@@ -394,8 +408,28 @@ b-footer__content {
 	justify-content: flex start;
 }
 
+.b-footer__folow-text {
+	margin-bottom: 13px;
+
+	font-family: $text_font_Roboto_Slab, serif;
+	font-size: 18px;
+	color: $color-light-gray-text;
+
+	word-spacing: -1px;
+	line-height: 1.2;
+}
+
 .b-footer__icon {
 	display: flex;
+}
+
+.b-footer .icon__item {
+margin-right: 10px;
+}
+ 
+.b-footer__news-letter-text {
+	font-size: 18px;
+	color: $color-light-gray-text;
 }
 
 .b-footer__form {
@@ -406,7 +440,20 @@ b-footer__content {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+
+	font-size: 18px;
+	color: $color-gray-text;
 }
+
+.b-footer__text__contact {
+	color: $color-light-gray-text;	
+}
+
+
+
+/*				-- нижний блок --			*/
+
+
 
 .b-footer__bottom-block {
 	width: 1024px;
@@ -415,9 +462,43 @@ b-footer__content {
 	justify-content: space-around;
 }
 
+.b-footer__сopyright {
+	color: $color-gray-text;
+}
+
+
+
+
+
+
 
 
 /*
+
+.Contact_Us {
+  font-size: 18px;
+  font-family: "Roboto Slab";
+  color: rgb(198, 198, 198);
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 1117.375px;
+  top: 2520.7px;
+  z-index: 68;
+}
+
+
+.Follow_Us {
+  font-size: 18px;
+  font-family: "Roboto Slab";
+  color: rgb(198, 198, 198);
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 187.375px;
+  top: 2520.2px;
+  z-index: 66;
+}
 
 
 
