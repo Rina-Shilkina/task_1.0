@@ -16,8 +16,10 @@ $text_font_Roboto: Roboto;
 
 $color-main-text: white;
 $color-gray-text: RGB(129, 129, 129);
-$color-light-gray-text: RGB(198, 198, 198);
+$color-light-gray-text: RGB(119, 119, 119);
+$color-middle-gray-text: RGB(198, 198, 198);
 $color-dark-gray-background: RGB(73, 73, 73);
+$color-light-red-button: RGB(155, 36, 45);
 
 
 /* -- переменные header --*/
@@ -415,7 +417,7 @@ b-footer__content {
 
 	font-family: $text_font_Roboto_Slab, serif;
 	font-size: 18px;
-	color: $color-light-gray-text;
+	color: $color-middle-gray-text;
 
 	word-spacing: -1px;
 	line-height: 1.2;
@@ -430,7 +432,7 @@ margin-right: 10px;
 }
 
 .b-footer__news-letter {
-	margin-left: -87px;
+	margin-left: -3.5%;
 }
  
 .b-footer__news-letter-text {
@@ -438,7 +440,7 @@ margin-right: 10px;
 
 	font-family: $text_font_Roboto_Slab, serif;
 	font-size: 18px;
-	color: $color-light-gray-text;
+	color: $color-middle-gray-text;
 	line-height: 1.2;
 }
 
@@ -452,24 +454,51 @@ margin-right: 10px;
 	align-items: flex-end;
 }
 
-.b-footer__input-text input[type=text]{
-	width: 199px;
-	height: 38px;
+.b-footer__input-text input[type=text] {
+	width: 201px;
+	height: 40px;
 
     border: none;	
+    box-sizing: border-box;
+	outline: none;    
+
+    padding-left: 19px;
+
     background-color: $color-dark-gray-background;
+
+    font-size: 14px;
+	font-family: $text_font_Roboto;
+	color: $color-light-gray-text;
+	line-height: 1.571;
 }
 
-.b-footer__input-text input[type="text"]::-moz-placeholder {
+.b-footer__button input[type=submit] { 
+	width: 123px;
+	height: 40px;
 
-color: black;
+	outline: none;
+
+	border: none;
+
+    background-color: $color-light-red-button;
+
+	font-family: $text_font_Roboto, serif;
+    font-size: 15px;
+    font-weight: 100;
+	color: $color-main-text;
+	line-height: 1.375;
+	letter-spacing: 0.5px;
+
+
 }
+
 
 .b-footer__text__contact {
-	font-family: $text_font_Roboto_Slab, serif;
+	font-family: $text_font_Roboto_Slab;
 	font-size: 18px;
-	color: $color-light-gray-text;	
+	color: $color-middle-gray-text;	
 	line-height: 1.2;
+
 	margin-bottom: 12px;
 
 }
@@ -513,14 +542,14 @@ color: black;
 
 /*
 
-.News_letter {
-
-  line-height: 1.2;
-  text-align: center;
+.Rectangle_6_copy {
+  background-color: rgb(73, 73, 73);
   position: absolute;
-  left: 537.375px;
-  top: 2520.2px;
-  z-index: 67;
+  left: 538px;
+  top: 2555px;
+  width: 324px;
+  height: 40px;
+  z-index: 76;
 }
 
 
