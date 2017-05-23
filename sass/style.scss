@@ -14,6 +14,7 @@ $text_font_Roboto_Slab: Roboto Slab;
 $text_font_Open_Sans: Open Sans;
 $text_font_Roboto: Roboto;
 
+$color-main: white;
 $color-main-text: white;
 $color-gray-text: RGB(129, 129, 129);
 $color-light-gray-text: RGB(119, 119, 119);
@@ -94,48 +95,78 @@ body {
 
 
 .header {
-	//width: 1400px;
 	height: 116px;
-	background-color: $color-head;
+	background-color: $color-main;
+}
+
+.header__content {
+	max-width: 1400px;
+
+}
+
+.content {
+	width: 1024px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;	
+
 }
 
 .header__logo {
-	padding: 35px 0px 0px 187px;
-	display: inline-block;
+    margin-top: 35px;
+
 }
 
 .header__menu {
-	float: right;
-	padding: 30px 190px 0px 0px;
+    margin-top: 32px;
+
 }
 
 
 .menu__item {
-	font-family: $text_font_Roboto_Slab;
+	display: flex;
+
 	list-style-type: none;
+
+	padding: 0;
 }
 
 .menu__list {
-	display: inline-block;
-	margin: 0 3px 0 0;
-
-	text-transform: uppercase;
-	font-size: 13.9px;
-}
-
-.menu__href {
-	padding: 7.5px 16px;
-
-	border-radius: 2px;
-
-	text-decoration: none;
-	color: $color_font_button_off_header;
+	//padding: 0 19px 0 16px;
+	//padding: 7.5px 16px;
+	margin: 0 0px 0 4.2px;
 }
 
 
-/*.header_navigation ul li:first-child a {
+.menu__href-active:default {
 	background-color: $color_button_header;
 	color: $color_font_button_on_header;
+	//padding: 7.5px 16px;
+	border-radius: 2px;
+}
+
+.menu__href:hover {
+	background-color: $color_button_header;
+	color: $color_font_button_on_header;
+	//padding: 7.5px 16px;
+	border-radius: 2px;
+   } 
+
+.menu__href {
+	font-family: $text_font_Roboto_Slab;
+	font-size: 13.9px;
+	text-transform: uppercase;	
+	text-decoration: none;
+	color: $color_font_button_off_header;
+	padding: 7.5px 16px;
+}
+
+
+/*.menu__list .first {
+	background-color: $color_button_header;
+	color: $color_font_button_on_header;
+	padding: 7.5px 16px;
+	border-radius: 2px;
 }*/
 
 
