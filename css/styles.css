@@ -26,34 +26,34 @@ body {
   height: 116px;
   background-color: white; }
 
-.header #logo {
+.header__logo {
   padding: 35px 0px 0px 187px;
   display: inline-block; }
 
-.header_navigation {
+.header__menu {
   float: right;
   padding: 30px 190px 0px 0px; }
 
-.header_navigation ul {
+.menu__item {
   font-family: Roboto Slab;
   list-style-type: none; }
 
-.header_navigation ul li {
+.menu__list {
   display: inline-block;
   margin: 0 3px 0 0;
   text-transform: uppercase;
   font-size: 13.9px; }
 
-.header_navigation ul li a {
+.menu__href {
   padding: 7.5px 16px;
   border-radius: 2px;
   text-decoration: none;
   color: RGB(108, 109, 109); }
 
-.header_navigation ul li:first-child a {
-  background-color: RGB(155, 36, 45);
-  color: RGB(241, 239, 236); }
-
+/*.header_navigation ul li:first-child a {
+	background-color: $color_button_header;
+	color: $color_font_button_on_header;
+}*/
 /* -- стили banner -- */
 .banner {
   width: 1400px;
