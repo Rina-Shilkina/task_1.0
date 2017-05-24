@@ -114,14 +114,11 @@ body {
 
 .header__logo {
     margin-top: 35px;
-
 }
 
 .header__menu {
     margin-top: 32px;
-
 }
-
 
 .menu__item {
 	display: flex;
@@ -138,9 +135,9 @@ body {
 }
 
 
-.menu__href-active:default {
+.menu__href-active {
 	background-color: $color_button_header;
-	color: $color_font_button_on_header;
+	color: $color_font_button_on_header !important;
 	//padding: 7.5px 16px;
 	border-radius: 2px;
 }
@@ -585,7 +582,7 @@ margin-right: 10px;
   z-index: 76;
 }
 
-
+h44bgrwf3R3FUi4B453RHr5
 
 
 */

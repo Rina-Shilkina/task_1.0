@@ -49,9 +49,9 @@ body {
 .menu__list {
   margin: 0 0px 0 4.2px; }
 
-.menu__href-active:default {
+.menu__href-active {
   background-color: RGB(155, 36, 45);
-  color: RGB(241, 239, 236);
+  color: RGB(241, 239, 236) !important;
   border-radius: 2px; }
 
 .menu__href:hover {
@@ -370,7 +370,7 @@ b-footer__content {
   z-index: 76;
 }
 
-
+h44bgrwf3R3FUi4B453RHr5
 
 
 */
