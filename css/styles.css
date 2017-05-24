@@ -137,66 +137,70 @@ body {
 
 /* -- стили bellow_banner -- */
 .bellow_banner {
-  width: 1400px;
+  width: 100%;
+  background-color: RGB(155, 36, 45);
   display: flex;
-  flex-wrap: wrap; }
+  flex-direction: column; }
 
-.bellow_banner .logo {
+.bellow_banner__content {
+  max-width: 1400px; }
+
+.bellow_banner__top-block {
+  display: flex; }
+
+.bellow_banner__logo {
   width: 540px;
   height: 316px;
-  background-color: RGB(241, 239, 236); }
+  background-color: RGB(241, 239, 236);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
 
-.bellow_banner .logo img {
-  margin: 128px 0 0 215px; }
+.logo_img {
+  margin: 5px 48px 0 0; }
 
-.bellow_banner .picture_moss {
-  width: 320px;
-  height: 316px;
-  background: url(../images/below_banner/moss.png); }
+.middle-img {
+  height: 316px; }
 
-.bellow_banner .donate_now {
+.bellow_banner__donate_now {
   width: 540px;
   height: 316px;
-  background-color: RGB(155, 36, 45); }
+  background-color: RGB(155, 36, 45);
+  color: RGB(255, 255, 255);
+  display: flex;
+  align-items: center; }
 
-.bellow_banner .donate_now p {
-  color: RGB(255, 255, 255); }
+.donate_now__text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 40px; }
 
-.bellow_banner .donate_now p:first-child {
+.text__h1 {
   font-family: Roboto Slab, serif;
   font-size: 40px;
   font-weight: bold;
   color: RGB(255, 255, 255);
   line-height: 0.55;
-  margin: 126px 0 0 42px; }
+  margin-bottom: 14px; }
 
-.bellow_banner .donate_now p:last-child {
+.text__h2 {
+  padding-left: 4px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 100;
   color: RGB(255, 255, 255);
   line-height: 1.375;
-  letter-spacing: 0.2px;
-  margin: 15px 0 0 46px; }
+  letter-spacing: 0.25px; }
 
-.bellow_banner .sign_up {
-  position: relative;
-  z-index: 2;
+.bellow_banner__middle-block {
+  display: flex; }
+
+.sign_up__content {
   width: 860px;
   height: 317px;
   background-color: RGB(70, 166, 81); }
 
-/*.bellow_banner .leaf {
-	width: 680px;
-	height: 779px;
-
-	position: relative;	
-	z-index: 1;
-
-
-	background: url(../images/below_banner/leaf.png);
-}*/
-.bellow_banner .sign_up p:first-child {
+.bellow_banner__middle-block p:first-child {
   font-family: Roboto Slab, serif;
   font-size: 40px;
   font-weight: bold;
@@ -205,10 +209,8 @@ body {
   text-align: right;
   margin: 74px 78px 0 0; }
 
-.bellow_banner .grass {
-  width: 860px;
-  height: 317px;
-  background: url(../images/below_banner/grass.png); }
+.bellow_banner__bottom-block {
+  display: flex; }
 
 .bellow_banner .facebook {
   width: 320px;
@@ -360,17 +362,18 @@ b-footer__content {
 
 /*
 
-.Rectangle_6_copy {
-  background-color: rgb(73, 73, 73);
+.Rectangle_3 {
+  background-color: rgb(175, 110, 115);
   position: absolute;
-  left: 538px;
-  top: 2555px;
-  width: 324px;
-  height: 40px;
-  z-index: 76;
+  left: 540px;
+  top: 718px;
+  width: 320px;
+  height: 316px;
+  z-index: 51;
 }
 
-h44bgrwf3R3FUi4B453RHr5
+display:flex;
+	justify-content: flex-end;
 
 
 */
