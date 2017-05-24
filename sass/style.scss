@@ -108,7 +108,7 @@ body {
 	width: 1024px;
 	display: flex;
 	justify-content: space-between;
-	margin: 0 auto;	
+	margin: 0 auto;
 
 }
 
@@ -131,7 +131,7 @@ body {
 .menu__list {
 	//padding: 0 19px 0 16px;
 	//padding: 7.5px 16px;
-	margin: 0 0px 0 4.2px;
+	margin: 0 3px 0 0;
 }
 
 
@@ -305,7 +305,6 @@ body {
 	margin: 0 0 0 40px;
 }
 
-
 .text__h1 {
 	font-family: $text_font_Roboto_Slab, serif;
 	font-size: 40px;
@@ -317,7 +316,6 @@ body {
 }
 
 .text__h2 {
-
     padding-left: 4px;
 
 	font-family: $text_font_Roboto;
@@ -326,7 +324,6 @@ body {
 	color:$color_text_bellow_banner;
 	line-height: 1.375;
 	letter-spacing: 0.25px;
-
 }
 
 .bellow_banner__middle-block {
@@ -337,21 +334,67 @@ body {
 	width: 860px;
 	height: 317px;
 
-	background-color: $color_background_sign_up;	
+	background-color: $color_background_sign_up;
+
+	display: inline-flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
 }
 
-.bellow_banner__middle-block p:first-child {
+.sign-up__text-h1 {
 
 	font-family: $text_font_Roboto_Slab, serif;
 	font-size: 40px;
 	font-weight: bold;	
 	color:$color_text_bellow_banner;
-	line-height: 0.55;
-	text-align: right;
+	//line-height: 0.55;
+}
 
-	margin: 74px 78px 0 0;
+.sign_up__form {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.form__input-text input[type=text] {
+	width: 201px;
+	height: 40px;
+
+	border: none;
+	box-sizing: border-box;
+	outline: none;
+
+	padding-left: 19px;
+
+	background-color: $color-dark-gray-background;
+
+	font-size: 14px;
+	font-family: $text_font_Roboto;
+	color: $color-light-gray-text;
+	line-height: 1.571;
+}
+
+.form__button input[type=submit] {
+	width: 123px;
+	height: 40px;
+
+	outline: none;
+
+	border: none;
+
+	background-color: $color-light-red-button;
+
+	font-family: $text_font_Roboto, serif;
+	font-size: 15px;
+	font-weight: 100;
+	color: $color-main-text;
+	line-height: 1.375;
+	letter-spacing: 0.5px;
+
 
 }
+
+
 .bellow_banner__bottom-block {
 	display: flex;
 }
@@ -376,7 +419,7 @@ body {
 	width: 100%;
 }
 
-b-footer__content {
+.b-footer__content {
 	max-width: 1400px;
 
 	background-color: $color_footer;
@@ -385,7 +428,7 @@ b-footer__content {
 	flex-wrap: wrap;
 	justify-content: center;
 	flex-direction: column;
-	margin: 0 auto;
+	//margin: 0 auto;
 }
 
 	
@@ -427,8 +470,12 @@ b-footer__content {
 	word-spacing: 1px;
 }
 
-.b-footer__menu__href .first {
-	color: green !important;
+.b-footer__menu__href-active {
+	color: $color-main-text;
+}
+
+.b-footer__menu__href:hover {
+	color: $color-main-text !important;
 }
 
 /*				-- средний блок --			*/
@@ -444,10 +491,10 @@ b-footer__content {
 	justify-content: space-between;
 }
 
-.b-footer__folow {
-	dispay: flex;
-	justify-content: flex start;
-}
+/*.b-footer__folow {
+	display: flex;
+	justify-content: flex-start;
+}*/
 
 .b-footer__folow-text {
 	margin-bottom: 13px;

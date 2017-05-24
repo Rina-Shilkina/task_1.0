@@ -47,7 +47,7 @@ body {
   padding: 0; }
 
 .menu__list {
-  margin: 0 0px 0 4.2px; }
+  margin: 0 3px 0 0; }
 
 .menu__href-active {
   background-color: RGB(155, 36, 45);
@@ -198,16 +198,47 @@ body {
 .sign_up__content {
   width: 860px;
   height: 317px;
-  background-color: RGB(70, 166, 81); }
+  background-color: RGB(70, 166, 81);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center; }
 
-.bellow_banner__middle-block p:first-child {
+.sign-up__text-h1 {
   font-family: Roboto Slab, serif;
   font-size: 40px;
   font-weight: bold;
-  color: RGB(255, 255, 255);
-  line-height: 0.55;
-  text-align: right;
-  margin: 74px 78px 0 0; }
+  color: RGB(255, 255, 255); }
+
+.sign_up__form {
+  display: flex;
+  justify-content: flex-end; }
+
+.form__input-text input[type=text] {
+  width: 201px;
+  height: 40px;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  padding-left: 19px;
+  background-color: RGB(73, 73, 73);
+  font-size: 14px;
+  font-family: Roboto;
+  color: RGB(119, 119, 119);
+  line-height: 1.571; }
+
+.form__button input[type=submit] {
+  width: 123px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: RGB(155, 36, 45);
+  font-family: Roboto, serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: white;
+  line-height: 1.375;
+  letter-spacing: 0.5px; }
 
 .bellow_banner__bottom-block {
   display: flex; }
@@ -222,14 +253,13 @@ body {
   background-color: RGB(55, 56, 56);
   width: 100%; }
 
-b-footer__content {
+.b-footer__content {
   max-width: 1400px;
   background-color: RGB(55, 56, 56);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
-  margin: 0 auto; }
+  flex-direction: column; }
 
 /*				-- верхний блок --			*/
 .b-footer__top-block {
@@ -257,8 +287,11 @@ b-footer__content {
   line-height: 1.467;
   word-spacing: 1px; }
 
-.b-footer__menu__href .first {
-  color: green !important; }
+.b-footer__menu__href-active {
+  color: white; }
+
+.b-footer__menu__href:hover {
+  color: white !important; }
 
 /*				-- средний блок --			*/
 .b-footer__middle-block {
@@ -269,10 +302,10 @@ b-footer__content {
   display: flex;
   justify-content: space-between; }
 
-.b-footer__folow {
-  dispay: flex;
-  justify-content: flex start; }
-
+/*.b-footer__folow {
+	display: flex;
+	justify-content: flex-start;
+}*/
 .b-footer__folow-text {
   margin-bottom: 13px;
   font-family: Roboto Slab, serif;
