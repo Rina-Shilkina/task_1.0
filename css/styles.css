@@ -239,15 +239,31 @@ body {
   color: white;
   letter-spacing: 0.3px; }
 
+.text-h2__top {
+  margin-bottom: 3.2px; }
+
 /*				-- нижний блок --			*/
 .bellow_banner__bottom-block {
   display: flex; }
 
 .facebook {
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 320px;
+  background-color: RGB(59, 89, 151); }
 
-.bellow_banner .facebook_img {
-  background-color: url(../images/below_banner/facebook.png); }
+.facebook__text-f {
+  width: 35px;
+  margin: 48px 0 30px 143px; }
+
+.bellow_banner .facebook_text {
+  font-family: Roboto, serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+  word-spacing: 1.5px;
+  margin: 0 0 0 127px; }
 
 /*				-- стили footer --			*/
 .b-footer {

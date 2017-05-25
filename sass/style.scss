@@ -28,6 +28,8 @@ $color-light-green-background: RGB(94, 192, 105);
 $color-light-green-text: RGB(70, 166, 81);
 $color-dark-green-button: RGB(52, 142, 62);
 
+$color-blue-background: RGB(59, 89, 151);
+
 
 /* -- переменные header --*/
 
@@ -404,7 +406,10 @@ body {
 	font-weight: 100;
 	color: $color-main-text;
 	letter-spacing: 0.3px;
+}
 
+.text-h2__top {
+    margin-bottom: 3.2px;
 }
 
 	
@@ -420,18 +425,29 @@ body {
 
 .facebook {
 	display: flex;
+	flex-direction: column;
+    justify-content: center;
+
+	width: 320px;
+
+	background-color: $color-blue-background;
 }
 
-.bellow_banner .facebook_img {
+.facebook__text-f {
+	width: 35px;
+    margin: 48px 0 30px 143px;
 
-	background-color: url(../images/below_banner/facebook.png);
+
 }
-
 .bellow_banner .facebook_text {
-	
+	font-family: $text_font_Roboto, serif;	
+	font-size: 16px;	
+	font-weight: 100;
+	color: $color-main-text;
+	word-spacing: 1.5px;
 
+	margin: 0 0 0 127px;
 }
-
 
 
 
