@@ -16,11 +16,17 @@ $text_font_Roboto: Roboto;
 
 $color-main: white;
 $color-main-text: white;
+
 $color-gray-text: RGB(129, 129, 129);
 $color-light-gray-text: RGB(119, 119, 119);
 $color-middle-gray-text: RGB(198, 198, 198);
 $color-dark-gray-background: RGB(73, 73, 73);
+
 $color-light-red-button: RGB(155, 36, 45);
+
+$color-light-green-background: RGB(94, 192, 105);
+$color-light-green-text: RGB(70, 166, 81);
+$color-dark-green-button: RGB(52, 142, 62);
 
 
 /* -- переменные header --*/
@@ -242,7 +248,9 @@ body {
 
 
 
-/* -- стили bellow_banner -- */
+
+/* 			-- стили bellow_banner --		 */
+
 
 
 
@@ -256,6 +264,10 @@ body {
 .bellow_banner__content {	
 	max-width: 1400px;	
 }
+
+	
+/*				-- верхний блок --			*/
+
 
 .bellow_banner__top-block {
 	display: flex;
@@ -286,15 +298,12 @@ body {
 
 	background-color: $color_background_below_banner_right_top;
 	color:$color_text_bellow_banner;
-
-	display:flex;
-	align-items: center;
 }
 
 .donate_now__text {
 	display:flex;
 	flex-direction: column;
-	margin: 0 0 0 40px;
+	margin: 110px 0 0 42px;
 }
 
 .text__h1 {
@@ -302,9 +311,8 @@ body {
 	font-size: 40px;
 	font-weight: bold;
 	color:$color_text_bellow_banner;
-	line-height: 0.55;
 
-	margin-bottom: 14px;
+	margin-bottom: 2px;
 }
 
 .text__h2 {
@@ -314,9 +322,12 @@ body {
 	font-size: 16px;
 	font-weight: 100;
 	color:$color_text_bellow_banner;
-	line-height: 1.375;
-	letter-spacing: 0.25px;
+    word-spacing: 1.2px;
 }
+
+	
+/*				-- средний блок --			*/
+
 
 .bellow_banner__middle-block {
 	display: flex;
@@ -324,14 +335,14 @@ body {
 
 .sign_up__content {
 	width: 860px;
-	height: 317px;
 
 	background-color: $color_background_sign_up;
 
 	display: inline-flex;
 	flex-direction: column;
 	align-items: flex-end;
-	justify-content: center;
+
+    padding: 58px 80px 0 0;
 }
 
 .sign-up__text-h1 {
@@ -341,16 +352,18 @@ body {
 	font-weight: bold;	
 	color:$color_text_bellow_banner;
 	//line-height: 0.55;
+
+	margin-bottom: 23px;
 }
 
 .sign_up__form {
 	display: flex;
-	justify-content: flex-end;
+	margin-bottom: 16px;
 }
 
 .form__input-text input[type=text] {
-	width: 201px;
-	height: 40px;
+	width: 274px;
+	height: 44px;
 
 	border: none;
 	box-sizing: border-box;
@@ -358,33 +371,44 @@ body {
 
 	padding-left: 19px;
 
-	background-color: $color-dark-gray-background;
+	background-color: $color-light-green-background;
 
 	font-size: 14px;
 	font-family: $text_font_Roboto;
-	color: $color-light-gray-text;
+	color: $color-light-green-text;
 	line-height: 1.571;
 }
 
 .form__button input[type=submit] {
 	width: 123px;
-	height: 40px;
+	height: 44px;
 
 	outline: none;
 
 	border: none;
 
-	background-color: $color-light-red-button;
+	background-color: $color-dark-green-button;
 
 	font-family: $text_font_Roboto, serif;
 	font-size: 15px;
 	font-weight: 100;
 	color: $color-main-text;
-	line-height: 1.375;
 	letter-spacing: 0.5px;
 
+	padding-top: 6px;
+}
+
+.sign-up__text-h2{
+	font-family: $text_font_Roboto, serif;	
+	font-size: 16px;	
+	font-weight: 100;
+	color: $color-main-text;
+	letter-spacing: 0.3px;
 
 }
+
+	
+/*				-- нижний блок --			*/
 
 
 .bellow_banner__bottom-block {
@@ -394,16 +418,26 @@ body {
 .right-img {
 }
 
-.bellow_banner .facebook {
-	width: 320px;
-	height: 317px;
+.facebook {
+	display: flex;
+}
 
-	background-color: $color_background_facebook;
+.bellow_banner .facebook_img {
+
+	background-color: url(../images/below_banner/facebook.png);
+}
+
+.bellow_banner .facebook_text {
+	
+
 }
 
 
 
+
 /*				-- стили footer --			*/
+
+
 
 
 .b-footer {
