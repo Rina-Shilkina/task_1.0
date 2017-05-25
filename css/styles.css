@@ -47,7 +47,15 @@ body {
   padding: 0; }
 
 .menu__list {
-  margin: 0 3px 0 0; }
+  margin: 0 3.8px 0 0; }
+
+.menu__href {
+  font-family: Roboto Slab;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: RGB(108, 109, 109);
+  padding: 7.5px 15.5px; }
 
 .menu__href-active {
   background-color: RGB(155, 36, 45);
@@ -59,20 +67,6 @@ body {
   color: RGB(241, 239, 236);
   border-radius: 2px; }
 
-.menu__href {
-  font-family: Roboto Slab;
-  font-size: 13.9px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: RGB(108, 109, 109);
-  padding: 7.5px 16px; }
-
-/*.menu__list .first {
-	background-color: $color_button_header;
-	color: $color_font_button_on_header;
-	padding: 7.5px 16px;
-	border-radius: 2px;
-}*/
 /* -- стили banner -- */
 .banner {
   width: 1400px;
