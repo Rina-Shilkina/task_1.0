@@ -361,7 +361,7 @@ body {
 	margin-bottom: 16px;
 }
 
-.form__input-text input[type=text] {
+.form__input-text {
 	width: 274px;
 	height: 44px;
 
@@ -379,7 +379,7 @@ body {
 	line-height: 1.571;
 }
 
-.form__button input[type=submit] {
+.form__submit {
 	width: 123px;
 	height: 44px;
 
@@ -564,7 +564,7 @@ margin-right: 10px;
 	align-items: flex-end;
 }
 
-.b-footer__input-text input[type=text] {
+.b-footer__input-text {
 	width: 201px;
 	height: 40px;
 
@@ -582,7 +582,7 @@ margin-right: 10px;
 	line-height: 1.571;
 }
 
-.b-footer__button input[type=submit] { 
+.b-footer__submit { 
 	width: 123px;
 	height: 40px;
 
@@ -598,8 +598,6 @@ margin-right: 10px;
 	color: $color-main-text;
 	line-height: 1.375;
 	letter-spacing: 0.5px;
-
-
 }
 
 
@@ -610,7 +608,6 @@ margin-right: 10px;
 	line-height: 1.2;
 
 	margin-bottom: 12px;
-
 }
 
 .b-footer__text__address,
@@ -623,9 +620,7 @@ margin-right: 10px;
 }
 
 
-
 /*				-- нижний блок --			*/
-
 
 
 .b-footer__bottom-block {
@@ -646,24 +641,3 @@ margin-right: 10px;
 
 
 
-
-
-
-
-/*
-
-.Rectangle_3 {
-  background-color: rgb(175, 110, 115);
-  position: absolute;
-  left: 540px;
-  top: 718px;
-  width: 320px;
-  height: 316px;
-  z-index: 51;
-}
-
-display:flex;
-	justify-content: flex-end;
-
-
-*/

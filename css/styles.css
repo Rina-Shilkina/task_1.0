@@ -206,7 +206,7 @@ body {
   display: flex;
   margin-bottom: 16px; }
 
-.form__input-text input[type=text] {
+.form__input-text {
   width: 274px;
   height: 44px;
   border: none;
@@ -219,7 +219,7 @@ body {
   color: RGB(70, 166, 81);
   line-height: 1.571; }
 
-.form__button input[type=submit] {
+.form__submit {
   width: 123px;
   height: 44px;
   outline: none;
@@ -339,7 +339,7 @@ body {
   flex-direction: column;
   align-items: flex-end; }
 
-.b-footer__input-text input[type=text] {
+.b-footer__input-text {
   width: 201px;
   height: 40px;
   border: none;
@@ -352,7 +352,7 @@ body {
   color: RGB(119, 119, 119);
   line-height: 1.571; }
 
-.b-footer__button input[type=submit] {
+.b-footer__submit {
   width: 123px;
   height: 40px;
   outline: none;
@@ -393,23 +393,5 @@ body {
   font-size: 15px;
   color: RGB(129, 129, 129);
   line-height: 1.467; }
-
-/*
-
-.Rectangle_3 {
-  background-color: rgb(175, 110, 115);
-  position: absolute;
-  left: 540px;
-  top: 718px;
-  width: 320px;
-  height: 316px;
-  z-index: 51;
-}
-
-display:flex;
-	justify-content: flex-end;
-
-
-*/
 
 /*# sourceMappingURL=styles.css.map */
