@@ -91,7 +91,7 @@ body {
 
 
 .latest_events {
-	width: 1400px;
+	width: 100%;
 	height: 682px;
 	background-color: $color_latest_events;
 }
@@ -295,7 +295,7 @@ body {
 .donate_now__text {
 	display:flex;
 	flex-direction: column;
-	margin: 110px 0 0 42px;
+	margin: 111px 0 0 42px;
 }
 
 .text__h1 {
@@ -304,7 +304,7 @@ body {
 	font-weight: bold;
 	color:$color_text_bellow_banner;
 
-	margin-bottom: 2px;
+	margin-bottom: 1px;
 }
 
 .text__h2 {
@@ -334,7 +334,7 @@ body {
 	flex-direction: column;
 	align-items: flex-end;
 
-    padding: 58px 80px 0 0;
+    padding: 60px 80px 0 0;
 }
 
 .sign-up__text-h1 {
@@ -345,7 +345,7 @@ body {
 	color:$color_text_bellow_banner;
 	//line-height: 0.55;
 
-	margin-bottom: 23px;
+	margin-bottom: 22px;
 }
 
 .sign_up-form {
