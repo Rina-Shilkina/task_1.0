@@ -18,7 +18,7 @@ body {
 
 .latest_events {
   width: 1400px;
-  height: 681px;
+  height: 682px;
   background-color: RGB(155, 36, 45); }
 
 /* -- стили header -- */
@@ -69,62 +69,51 @@ body {
 
 /* -- стили banner -- */
 .banner {
-  width: 1400px;
-  height: 603px; }
+  width: 100%;
+  height: 603px;
+  background: url(../images/banner/step.png);
+  background-repeat: no-repeat;
+  background-size: 100%; }
 
-.banner .background_filter {
-  width: inherit;
-  height: inherit;
-  background-color: rgba(155, 36, 45, 0.5);
-  position: absolute; }
-
-.banner .background {
-  width: inherit;
-  height: inherit;
-  background: url(../images/header/Layer.png);
-  position: absolute; }
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  align-items: center; }
 
 .banner_words {
-  width: inherit;
-  height: inherit;
-  position: absolute;
   color: white;
   font-family: Roboto Slab, serif; }
 
-.banner_words p:first-child {
-  margin: 215px 4px 0 0;
-  text-align: center;
+.banner__words-h1 {
+  margin: 215px 4px 4px 0;
   text-transform: uppercase;
   font-size: 50px;
   font-weight: bold;
   line-height: 1.2;
   letter-spacing: 0.5px; }
 
-.banner_words p:last-child {
-  margin: 4px 5px 0 0;
-  text-align: center;
+.banner__words-h2 {
+  margin: 0px 6px 67px 0;
   font-size: 24px;
   font-weight: 100;
   word-spacing: 0.2px;
   line-height: 1.2;
-  letter-spacing: 0.1px; }
+  letter-spacing: 0.1px;
+  margin-bottom: 67px; }
 
-#button_donate_now {
-  position: absolute;
-  width: inherit;
-  margin-top: 361px;
-  text-align: center; }
+.donate_now__button {
+  margin-bottom: 201px; }
 
-#button_donate_now a {
-  display: inline-block;
-  margin: 0;
-  padding: 11px 58px 15px 53px;
+.donate-now__href {
+  padding: 8px 56px 13px 54px;
   text-decoration: none;
   font-family: Open Sans;
   font-size: 26px;
   font-weight: bold;
   color: RGB(70, 166, 81);
-  line-height: 1.2;
+  line-height: 1;
+  word-spacing: 2.5px;
   box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.07);
   border-radius: 70px / 70px;
   background-color: white; }
