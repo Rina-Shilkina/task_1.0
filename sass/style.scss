@@ -76,7 +76,9 @@ $color_text_navigation: RGB(129, 129, 129);
 
 /*			-- общие стили --			*/
 
-
+html {
+	font-size: 100%
+}
 
 
 body {
@@ -85,9 +87,7 @@ body {
 }
 
 .page {
-
 	height: 2733px;
-	margin: 0px auto;
 }
 
 .latest_events {
@@ -103,18 +103,12 @@ body {
 
 
 
-
 .header {
-	height: 116px;
 	background-color: $color-main;
 }
 
-.header__content {
-	max-width: 1400px;
-}
-
 .content {
-	width: 1024px;
+	width: 73.14285714%; /* 1024 / 1400 */
 
 	display: flex;
 	justify-content: space-between;
@@ -123,11 +117,98 @@ body {
 }
 
 .header__logo {
-    margin-top: 35px;
+	margin: 3.41796875% 0 3.2% 0.29296875%; /* 35 / 1024 */	/*  */
+	/*flex: none; */
+    float: left;
+	align-self: center;
+
 }
 
+@media screen and (max-width: 1400px) {
+	.menu__href {
+		font-size: 0.875em; /* 14 / 16 */
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.logo {
+		width: 90.566037735%; /* 192 / 212 */
+	}
+	.menu__href {
+		font-size: 0.8125em; /* 13 / 16  */
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	/*.header { flex: 0 1 auto; }*/
+	.logo {
+		width: 85.849056603%; /* 182 / 212 */
+	}
+	.menu__href {
+		font-size: 0.75em; /* 12 / 16  */
+	}
+}
+
+@media screen and (max-width: 1130px) {
+	.logo {
+		width: 81.132075471%; /* 172 / 212 */
+	}
+	.menu__href {
+		font-size: 0.6875em; /* 11 / 16  */
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.logo {
+		width: 76.415094339%; /* 162 / 212 */
+	}
+	.menu__href {
+		font-size: 0.625em; /* 10 / 16 */
+	}
+}
+
+@media screen and (max-width: 970px) {
+	.logo {
+		width: 71.698113207%; /* 152 / 212 */
+	}
+	.menu__href {
+		font-size: 0.5625em; /* 9 / 16 */
+	}
+}
+@media screen and (max-width: 900px) {
+	.logo {
+		width: 82%; /* 132 / 212 */
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.logo {
+		width: 66.981132075%; /* 142 / 212 */
+	}
+}
+
+@media screen and (max-width: 600px){
+	.logo {
+		width: 61.79245283%; /* 132 / 212 */
+	}
+}
+
+@media screen and (max-width: 480px){
+	.logo {
+		width: 57.547169811%; /* 122 / 212 */
+	}
+}
+
+@media screen and (max-width: 320px){
+	.logo {
+		width: 52.830188679%; /* 112 / 212 */
+	}
+}
+
+
 .header__menu {
-    margin-top: 32px;
+    margin: 3.125% -1.46484375% 3.4% 0 ; /* 32px / 1024 */ /* -15px / 1024 */ /*  */ /* 0 */
 }
 
 .menu__item {
@@ -144,11 +225,11 @@ body {
 
 .menu__href {
 	font-family: $text_font_Roboto_Slab;
-	font-size: 14px;
-	text-transform: uppercase;	
+	/*font-size: 0.875em; /* 14 px 0.875em*/
+	text-transform: uppercase;
 	text-decoration: none;
 	color: $color_font_button_off_header;
-	padding: 7.5px 15.5px;
+	padding: 0.5em 1.107142857em; /* ? */	/* 15.5 / 1400 */
 }
 
 .menu__href-active {
